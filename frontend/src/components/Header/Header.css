@@ -27,10 +27,34 @@
 }
 .header-contents button{
     border: none;
-    color: #747474;
+    color: tomato;
     font-weight: 500;
     padding: 1vw 2.3vw;
     background-color: #f9f9f9;
     font-size: max(1vw, 13px);
     border-radius: 50px;
+}
+.header-contents button:hover{
+    cursor: pointer;
+    background-color: tomato;
+    color: rgb(255, 253, 253);
+}
+@media (max-width:1050px){
+    .header{
+        height: 38vw ;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px){
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
 }
